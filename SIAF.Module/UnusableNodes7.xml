@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="Software_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="CdKey" Index="8" />
+      </Columns>
+    </ListView>
+  </Views>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Catalogos">
+        <Items Id="Items">
+          <Item Id="TipoMovimiento_ListView" ViewId="TipoMovimiento_ListView" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

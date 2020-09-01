@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="Activo_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Depreciacion" Index="-1" />
+      </Columns>
+    </ListView>
+    <ListView Id="Asignacion_Activo_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Depreciacion" Index="-1" />
+      </Columns>
+    </ListView>
+    <ListView Id="Descargo_Activo_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Depreciacion" Index="-1" />
+      </Columns>
+    </ListView>
+    <ListView Id="Traslado_Activo_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Depreciacion" Index="-1" />
+      </Columns>
+    </ListView>
+  </Views>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Catalogos">
+        <Items Id="Items">
+          <Item Id="TipoMovimiento_ListView" ViewId="TipoMovimiento_ListView" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

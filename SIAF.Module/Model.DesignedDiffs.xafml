@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="SIAF" Logo="ExpressAppLogo" PreferredLanguage="es-SV">
+  <ActionDesign>
+    <Actions>
+      <Action Id="AcceptLogonParameters" ValidationContexts="RegisterUserContext;RestorePasswordContext" />
+      <Action Id="DialogOK" ValidationContexts="ChangePassword" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="SIAF.Module.BusinessObjects.Activo" IsCloneable="True" />
+    <Class Name="SIAF.Module.BusinessObjects.Equipo" IsCloneable="True" />
+    <Class Name="SIAF.Module.BusinessObjects.Software" IsCloneable="True" />
+    <Class Name="SIAF.Module.BusinessObjects.Vehiculo" IsCloneable="True" />
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="Movimientos" Index="0" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Asignacion_ListView" ViewId="Asignacion_ListView" ObjectKey="" Index="1" ImageName="BO_Lead" Caption="Asignaciones" IsNewNode="True" />
+          <Item Id="Traslado_ListView" ViewId="Traslado_ListView" ObjectKey="" Caption="Traslados" ImageName="Action_Refresh" Index="2" IsNewNode="True" />
+          <Item Id="Descargo_ListView" ViewId="Descargo_ListView" ObjectKey="" Index="3" ImageName="Action_Delete" Caption="Descargos" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Activos" Index="1" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Equipo_ListView" ViewId="Equipo_ListView" ObjectKey="" Index="1" Caption="Equipos" ImageName="Action_EditModel" IsNewNode="True" />
+          <Item Id="Vehiculo_ListView" ViewId="Vehiculo_ListView" ObjectKey="" Index="2" Caption="Vehiculos" ImageName="BO_Vendor" IsNewNode="True" />
+          <Item Id="Software_ListView" ViewId="Software_ListView" ObjectKey="" Index="3" ImageName="Action_Export_Chart" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Catalogos" Caption="Catálogos" Index="3" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Ambiente_ListView" ViewId="Ambiente_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="AutorSoftware_ListView" ViewId="AutorSoftware_ListView" ObjectKey="" ImageName="Action_Clear_Settings" IsNewNode="True" />
+          <Item Id="Clase_ListView" ViewId="Clase_ListView" ObjectKey="" ImageName="BO_StateMachine" IsNewNode="True" />
+          <Item Id="ClaseMovimiento_ListView" ViewId="ClaseMovimiento_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Color_ListView" ViewId="Color_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Combustible_ListView" ViewId="Combustible_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="CuentaContable_ListView" ViewId="CuentaContable_ListView" ObjectKey="" ImageName="Action_Grand_Totals_Row" IsNewNode="True" />
+          <Item Id="Departamento_ListView" ViewId="Departamento_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Depto_ListView" ViewId="Depto_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Destino_ListView" ViewId="Destino_ListView" ObjectKey="" ImageName="Action_NavigationBar" IsNewNode="True" />
+          <Item Id="Empleado_ListView" ViewId="Empleado_ListView" ObjectKey="" ImageName="BO_Position" IsNewNode="True" />
+          <Item Id="EstadoFisico_ListView" ViewId="EstadoFisico_ListView" ObjectKey="" ImageName="Action_Grant" IsNewNode="True" />
+          <Item Id="Fuente_ListView" ViewId="Fuente_ListView" ObjectKey="" ImageName="Action_Debug_Step" IsNewNode="True" />
+          <Item Id="Gerencia_ListView" ViewId="Gerencia_ListView" ObjectKey="" ImageName="Action_Workflow_ShowWorkflowInstances" IsNewNode="True" />
+          <Item Id="Grupo_ListView" ViewId="Grupo_ListView" ObjectKey="" ImageName="Action_StateMachine" IsNewNode="True" />
+          <Item Id="LineaSoftware_ListView" ViewId="LineaSoftware_ListView" ObjectKey="" ImageName="Action_ModelDifferences_Export" IsNewNode="True" />
+          <Item Id="Marca_ListView" ViewId="Marca_ListView" ObjectKey="" ImageName="BO_Sale_v92" IsNewNode="True" />
+          <Item Id="Material_ListView" ViewId="Material_ListView" ObjectKey="" ImageName="Action_CloneMerge_Merge_Object" IsNewNode="True" />
+          <Item Id="MotivoDescargo_ListView" ViewId="MotivoDescargo_ListView" ObjectKey="" ImageName="Action_Navigation" IsNewNode="True" />
+          <Item Id="Municipio_ListView" ViewId="Municipio_ListView" ObjectKey="" ImageName="ModelEditor_Action_Modules" IsNewNode="True" />
+          <Item Id="Procedencia_ListView" ViewId="Procedencia_ListView" ObjectKey="" ImageName="BO_Invoice" IsNewNode="True" />
+          <Item Id="Proceso_ListView" ViewId="Proceso_ListView" ObjectKey="" ImageName="BO_Security_Permission_Type" IsNewNode="True" />
+          <Item Id="Region_ListView" ViewId="Region_ListView" ObjectKey="" ImageName="Action_Debug_Stop" IsNewNode="True" />
+          <Item Id="SubClase_ListView" ViewId="SubClase_ListView" ObjectKey="" ImageName="Action_Change_State" IsNewNode="True" />
+          <Item Id="TipoMovimiento_ListView" ViewId="TipoMovimiento_ListView" ObjectKey="" ImageName="Action_Reload" IsNewNode="True" />
+          <Item Id="Traccion_ListView" ViewId="Traccion_ListView" ObjectKey="" ImageName="ModelEditor_Categorized" IsNewNode="True" />
+          <Item Id="Unidad_ListView" ViewId="Unidad_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Reportes" Index="4" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Reporte_ListView" ViewId="Reporte_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Extras" Index="5" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Activo_ListView" ViewId="Activo_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Establecimiento_ListView" ViewId="Establecimiento_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="HistorialMovimientos_ListView" ViewId="HistorialMovimientos_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="ReportsV2" ViewId="ReportDataV2_ListView" ObjectKey="" Caption="Reports" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Default" Caption="Seguridad" Index="6">
+        <Items>
+          <Item Id="Usuario_ListView" Index="1" />
+          <Item Id="Rol_ListView" Index="2" />
+          <Item Id="HistorialDeLogueo_ListView" Index="3" />
+          <Item Id="Activo_ListView" Removed="True" />
+          <Item Id="Ambiente_ListView" Removed="True" />
+          <Item Id="Asignacion_ListView" Removed="True" />
+          <Item Id="AutorSoftware_ListView" Removed="True" />
+          <Item Id="Clase_ListView" Removed="True" />
+          <Item Id="ClaseMovimiento_ListView" Removed="True" />
+          <Item Id="Color_ListView" Removed="True" />
+          <Item Id="Combustible_ListView" Removed="True" />
+          <Item Id="CuentaContable_ListView" Removed="True" />
+          <Item Id="Departamento_ListView" Removed="True" />
+          <Item Id="Depto_ListView" Removed="True" />
+          <Item Id="Descargo_ListView" Removed="True" />
+          <Item Id="Destino_ListView" Removed="True" />
+          <Item Id="Empleado_ListView" Removed="True" />
+          <Item Id="Equipo_ListView" Removed="True" />
+          <Item Id="Establecimiento_ListView" Removed="True" />
+          <Item Id="EstadoFisico_ListView" Removed="True" />
+          <Item Id="Fuente_ListView" Removed="True" />
+          <Item Id="Gerencia_ListView" Removed="True" />
+          <Item Id="Grupo_ListView" Removed="True" />
+          <Item Id="HistorialMovimientos_ListView" Removed="True" />
+          <Item Id="LineaSoftware_ListView" Removed="True" />
+          <Item Id="Marca_ListView" Removed="True" />
+          <Item Id="Material_ListView" Removed="True" />
+          <Item Id="MotivoDescargo_ListView" Removed="True" />
+          <Item Id="Municipio_ListView" Removed="True" />
+          <Item Id="Procedencia_ListView" Removed="True" />
+          <Item Id="Proceso_ListView" Removed="True" />
+          <Item Id="Region_ListView" Removed="True" />
+          <Item Id="Reporte_ListView" Removed="True" />
+          <Item Id="Software_ListView" Removed="True" />
+          <Item Id="SubClase_ListView" Removed="True" />
+          <Item Id="Traccion_ListView" Removed="True" />
+          <Item Id="Traslado_ListView" Removed="True" />
+          <Item Id="Unidad_ListView" Removed="True" />
+          <Item Id="Vehiculo_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="Reports" Removed="True" />
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="14.2.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="14.2.4.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="Activo_DetailView">
+      <Items>
+        <PropertyEditor Id="Ambiente" Index="0" />
+        <PropertyEditor Id="Asignacion" Index="1" />
+        <PropertyEditor Id="Clase" Index="2" />
+        <PropertyEditor Id="CodAnterior" Index="3" />
+        <PropertyEditor Id="CodigoDeActivo" Index="4" />
+        <PropertyEditor Id="Correlativo" Index="5" />
+        <PropertyEditor Id="CuentaContable" Index="6" />
+        <PropertyEditor Id="DepreciacionAcumulada" Index="7" />
+        <PropertyEditor Id="DepreciacionAnual" Index="8" />
+        <PropertyEditor Id="DepreciacionDiaria" Index="9" />
+        <PropertyEditor Id="DepreciacionMensual" Index="10" />
+        <PropertyEditor Id="DepreciadoTotalmente" Index="11" />
+        <PropertyEditor Id="Descargo" Index="12" />
+        <PropertyEditor Id="DiasADepreciar" Index="13" />
+        <PropertyEditor Id="Empleado_Cod" PropertyName="Empleado.Codigo" Caption="CódigoEmpleado" Index="14" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Activo">
+              <LayoutGroup Id="Activo_col1">
+                <LayoutItem Id="ValorInicial" Removed="True" />
+                <LayoutItem Id="VidaUtil" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Activo_col2">
+                <LayoutItem Id="ValorInicial" ViewItem="ValorInicial" Index="0" IsNewNode="True" />
+                <LayoutItem Id="VidaUtil" ViewItem="VidaUtil" Index="1" IsNewNode="True" />
+                <LayoutItem Id="ValorResidual" Index="2" />
+                <LayoutItem Id="ValorADepreciar" Index="3" />
+                <LayoutItem Id="DiasADepreciar" Index="4" />
+                <LayoutItem Id="DepreciacionAnual" Index="5" />
+                <LayoutItem Id="DepreciacionMensual" Index="6" />
+                <LayoutItem Id="DepreciacionDiaria" Index="7" />
+                <LayoutItem Id="DepreciacionAcumulada" Index="8" />
+                <LayoutItem Id="ValorActual" Index="9" />
+                <LayoutItem Id="Unidad" Index="10" />
+                <LayoutItem Id="Ambiente" Index="11" />
+                <LayoutItem Id="Empleado" Index="12" />
+                <LayoutItem Id="CodigoEmpleado" Index="13" />
+                <LayoutItem Id="Detalle" Index="14" />
+                <LayoutItem Id="Estado" Index="15" />
+                <LayoutItem Id="EstadoAnterior" Index="16" />
+                <LayoutItem Id="Tipo" Index="17" />
+                <LayoutItem Id="EstadoActivoGuardado" Index="18" />
+                <LayoutItem Id="DepreciadoTotalmente" Index="19" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Activo_ListView">
+      <Columns>
+        <ColumnInfo Id="CuentaContable" Index="-1" />
+        <ColumnInfo Id="DepreciacionAcumulada" Index="-1" />
+        <ColumnInfo Id="DepreciacionDiaria" Index="-1" />
+        <ColumnInfo Id="Establecimiento" Index="-1" />
+        <ColumnInfo Id="Estado" Index="-1" />
+        <ColumnInfo Id="EstadoActivoGuardado" Index="-1" />
+        <ColumnInfo Id="EstadoFisico" Index="-1" />
+        <ColumnInfo Id="FechaDeAdquisicion" Index="-1" />
+        <ColumnInfo Id="FechaTemporal" Index="-1" />
+        <ColumnInfo Id="Fuente" Index="-1" />
+        <ColumnInfo Id="Grupo" Index="-1" />
+        <ColumnInfo Id="NumeroDeFactura" Index="-1" />
+        <ColumnInfo Id="Observacion" Index="-1" />
+        <ColumnInfo Id="Procedencia" Index="-1" />
+        <ColumnInfo Id="Tipo" Index="-1" />
+        <ColumnInfo Id="ValorActual" Index="-1" />
+        <ColumnInfo Id="ValorInicial" Index="-1" />
+        <ColumnInfo Id="VidaUtil" Index="-1" />
+        <ColumnInfo Id="Correlativo" Index="1" />
+        <ColumnInfo Id="Clase" Index="2" />
+        <ColumnInfo Id="SubClase" Index="3" />
+        <ColumnInfo Id="Unidad" Index="4" />
+        <ColumnInfo Id="Ambiente" Index="5" />
+        <ColumnInfo Id="Empleado" Index="6" />
+        <ColumnInfo Id="ValorResidual" Index="8" />
+        <ColumnInfo Id="ValorADepreciar" Index="9" />
+        <ColumnInfo Id="DiasADepreciar" Index="10" />
+        <ColumnInfo Id="DepreciacionAnual" Index="11" />
+        <ColumnInfo Id="DepreciacionMensual" Index="12" />
+        <ColumnInfo Id="EstadoAnterior" Index="13" />
+        <ColumnInfo Id="DepreciadoTotalmente" Index="14" />
+      </Columns>
+    </ListView>
+    <ListView Id="Activo_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Clase.Descripcion" PropertyName="Clase.Descripcion" Index="1" Caption="Clase" IsNewNode="True" />
+        <ColumnInfo Id="SubClase.Descripcion" PropertyName="SubClase.Descripcion" Index="2" Caption="Sub Clase" IsNewNode="True" />
+        <ColumnInfo Id="Ambiente" PropertyName="Ambiente" Index="3" IsNewNode="True" />
+        <ColumnInfo Id="Empleado.Nombre" PropertyName="Empleado.Nombre" Index="4" Caption="Empleado" IsNewNode="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="Asignacion_Activo_ListView">
+      <Columns>
+        <ColumnInfo Id="Correlativo" Index="-1" />
+        <ColumnInfo Id="CuentaContable" Index="-1" />
+        <ColumnInfo Id="DepreciacionAcumulada" Index="-1" />
+        <ColumnInfo Id="DepreciacionDiaria" Index="-1" />
+        <ColumnInfo Id="Establecimiento" Index="-1" />
+        <ColumnInfo Id="Estado" Index="-1" />
+        <ColumnInfo Id="EstadoActivoGuardado" Index="-1" />
+        <ColumnInfo Id="EstadoFisico" Index="-1" />
+        <ColumnInfo Id="FechaDeAdquisicion" Index="-1" />
+        <ColumnInfo Id="FechaTemporal" Index="-1" />
+        <ColumnInfo Id="Fuente" Index="-1" />
+        <ColumnInfo Id="Grupo" Index="-1" />
+        <ColumnInfo Id="NumeroDeFactura" Index="-1" />
+        <ColumnInfo Id="Observacion" Index="-1" />
+        <ColumnInfo Id="Procedencia" Index="-1" />
+        <ColumnInfo Id="Tipo" Index="-1" />
+        <ColumnInfo Id="ValorActual" Index="-1" />
+        <ColumnInfo Id="ValorInicial" Index="-1" />
+        <ColumnInfo Id="VidaUtil" Index="-1" />
+        <ColumnInfo Id="Clase" Index="1" />
+        <ColumnInfo Id="SubClase" Index="2" />
+        <ColumnInfo Id="Unidad" Index="3" />
+        <ColumnInfo Id="Ambiente" Index="4" />
+        <ColumnInfo Id="Empleado" Index="5" />
+      </Columns>
+    </ListView>
+    <DashboardView Id="ConfirmationMessageView" ImageName="BO_Attention" Caption="Attention!" IsNewNode="True">
+      <Items IsNewNode="True">
+        <StaticText Id="ConfirmationMessage" Text="You are about to do something very serious. Are you sure?" IsNewNode="True" />
+      </Items>
+      <Layout IsNewNode="True">
+        <LayoutGroup Id="Main" IsNewNode="True">
+          <LayoutItem Id="ConfirmationMessage" ViewItem="ConfirmationMessage" Index="0" IsNewNode="True" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <ListView Id="Descargo_Activo_ListView">
+      <Columns>
+        <ColumnInfo Id="Correlativo" Index="-1" />
+        <ColumnInfo Id="CorrelativoInt" Index="-1" />
+        <ColumnInfo Id="CuentaContable" Index="-1" />
+        <ColumnInfo Id="DepreciacionAcumulada" Index="-1" />
+        <ColumnInfo Id="DepreciacionAnual" Index="-1" />
+        <ColumnInfo Id="DepreciacionDiaria" Index="-1" />
+        <ColumnInfo Id="DepreciacionMensual" Index="-1" />
+        <ColumnInfo Id="DepreciadoTotalmente" Index="-1" />
+        <ColumnInfo Id="Depresiable" Index="-1" SortIndex="0" SortOrder="Ascending" />
+        <ColumnInfo Id="Detalle" Index="-1" />
+        <ColumnInfo Id="DiasADepreciar" Index="-1" Width="89" />
+        <ColumnInfo Id="Establecimiento" Index="-1" />
+        <ColumnInfo Id="Estado" Index="-1" />
+        <ColumnInfo Id="EstadoActivoGuardado" Index="-1" />
+        <ColumnInfo Id="EstadoAnterior" Index="-1" />
+        <ColumnInfo Id="EstadoFisico" Index="-1" />
+        <ColumnInfo Id="FechaDeIngreso" Index="-1" />
+        <ColumnInfo Id="FechaTemporal" Index="-1" />
+        <ColumnInfo Id="Fuente" Index="-1" />
+        <ColumnInfo Id="Grupo" Index="-1" />
+        <ColumnInfo Id="NumeroDeFactura" Index="-1" />
+        <ColumnInfo Id="Observacion" Index="-1" />
+        <ColumnInfo Id="Procedencia" Index="-1" />
+        <ColumnInfo Id="Tipo" Index="-1" />
+        <ColumnInfo Id="ValorActual" Index="-1" />
+        <ColumnInfo Id="ValorADepreciar" Index="-1" />
+        <ColumnInfo Id="ValorInicial" Index="-1" />
+        <ColumnInfo Id="ValorResidual" Index="-1" Width="80" />
+        <ColumnInfo Id="VidaUtil" Index="-1" />
+        <ColumnInfo Id="CodigoDeActivo" SortIndex="-1" SortOrder="None" />
+        <ColumnInfo Id="FechaDeAdquisicion" Index="1" />
+        <ColumnInfo Id="Clase" Index="2" />
+        <ColumnInfo Id="SubClase" Index="3" />
+        <ColumnInfo Id="Unidad" Index="4" />
+        <ColumnInfo Id="Ambiente" Index="5" />
+        <ColumnInfo Id="CodigoEmpleado" Index="6" />
+        <ColumnInfo Id="Empleado" Index="7" />
+      </Columns>
+    </ListView>
+    <ListView Id="Empleado_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Codigo" PropertyName="Codigo" Index="0" IsNewNode="True" />
+        <ColumnInfo Id="Nombre" Index="1" />
+        <ColumnInfo Id="Ambiente.Descripcion" PropertyName="Ambiente.Descripcion" Index="2" Caption="Ambiente" IsNewNode="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Equipo_DetailView">
+      <Items>
+        <PropertyEditor Id="Ambiente" Index="0" />
+        <PropertyEditor Id="Asignacion" Index="1" />
+        <PropertyEditor Id="Clase" Index="2" />
+        <PropertyEditor Id="CodAnterior" Index="3" />
+        <PropertyEditor Id="CodigoDeActivo" Index="4" />
+        <PropertyEditor Id="Color" Index="5" />
+        <PropertyEditor Id="Correlativo" Index="6" />
+        <PropertyEditor Id="CuentaContable" Index="7" />
+        <PropertyEditor Id="DepreciacionAcumulada" Index="8" />
+        <PropertyEditor Id="DepreciacionAnual" Index="9" />
+        <PropertyEditor Id="DepreciacionDiaria" Index="10" />
+        <PropertyEditor Id="DepreciacionMensual" Index="11" />
+        <PropertyEditor Id="DepreciadoTotalmente" Index="12" />
+        <PropertyEditor Id="Descargo" Index="13" />
+        <PropertyEditor Id="DiasADepreciar" Index="14" />
+        <PropertyEditor Id="Codigo_empleado" PropertyName="Empleado.Codigo" Index="15" Caption="Codigo Empleado" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Activo">
+              <LayoutGroup Id="Activo_col1">
+                <LayoutItem Id="ValorInicial" Removed="True" />
+                <LayoutItem Id="VidaUtil" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Activo_col2">
+                <LayoutItem Id="ValorInicial" ViewItem="ValorInicial" Index="0" IsNewNode="True" />
+                <LayoutItem Id="VidaUtil" ViewItem="VidaUtil" Index="1" IsNewNode="True" />
+                <LayoutItem Id="ValorResidual" Index="2" />
+                <LayoutItem Id="ValorADepreciar" Index="3" />
+                <LayoutItem Id="DiasADepreciar" Index="4" />
+                <LayoutItem Id="DepreciacionAnual" Index="5" />
+                <LayoutItem Id="DepreciacionMensual" Index="6" />
+                <LayoutItem Id="DepreciacionDiaria" Index="7" />
+                <LayoutItem Id="DepreciacionAcumulada" Index="8" />
+                <LayoutItem Id="ValorActual" Index="9" />
+                <LayoutItem Id="Unidad" Index="10" />
+                <LayoutItem Id="Ambiente" Index="11" />
+                <LayoutItem Id="Empleado" Index="12" />
+                <LayoutItem Id="CodigoEmpleado" Index="13" />
+                <LayoutItem Id="Detalle" Index="14" />
+                <LayoutItem Id="Estado" Index="15" />
+                <LayoutItem Id="EstadoAnterior" Index="16" />
+                <LayoutItem Id="Tipo" Index="17" />
+                <LayoutItem Id="EstadoActivoGuardado" Index="18" />
+                <LayoutItem Id="DepreciadoTotalmente" Index="19" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Equipo_ListView">
+      <Columns>
+        <ColumnInfo Id="CodigoDeActivo" PropertyName="CodigoDeActivo" Index="0" IsNewNode="True" Removed="True" />
+        <ColumnInfo Id="Clase" Index="1" />
+        <ColumnInfo Id="SubClase" Index="2" />
+        <ColumnInfo Id="Empleado" Index="4" />
+        <ColumnInfo Id="Marca" Index="5" />
+        <ColumnInfo Id="Modelo" Index="6" />
+        <ColumnInfo Id="Serie" Index="7" />
+        <ColumnInfo Id="Color" Index="8" />
+        <ColumnInfo Id="Material" Index="9" />
+      </Columns>
+    </ListView>
+    <DetailView Id="MensajeTexto_DetailView" Caption=" SIAF" />
+    <ListView Id="SecuritySystemTypePermissionsObjectOwner_TypePermissions_ListView">
+      <Columns>
+        <ColumnInfo Id="Object" SortIndex="0" SortOrder="Ascending" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Software_DetailView">
+      <Items>
+        <PropertyEditor Id="DepreciacionAcumulada" Caption="Amortizacion Acumulada" />
+        <PropertyEditor Id="DepreciacionMensual" Caption="Amortizacion Mensual" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Software">
+              <LayoutGroup Id="Software_col1">
+                <LayoutItem Id="NumeroLicencia" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Software_col2">
+                <LayoutItem Id="NumeroLicencia" ViewItem="NumeroLicencia" ShowCaption="" Index="0" IsNewNode="True" />
+                <LayoutItem Id="Anio" Index="1" />
+                <LayoutItem Id="RegistroCNR" Index="2" />
+                <LayoutItem Id="ValorTotal" Index="3" />
+                <LayoutItem Id="Guardado" Index="4" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Activo">
+              <LayoutGroup Id="Activo_col1">
+                <LayoutItem Id="Depresiable" Removed="True" />
+                <LayoutItem Id="FechaDeAdquisicion" Removed="True" />
+                <LayoutItem Id="Fuente" Removed="True" />
+                <LayoutItem Id="NumeroDeFactura" Removed="True" />
+                <LayoutItem Id="Procedencia" Removed="True" />
+                <LayoutItem Id="ValorInicial" Removed="True" />
+                <LayoutItem Id="VidaUtil" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Activo_col2">
+                <LayoutItem Id="FechaDeAdquisicion" ViewItem="FechaDeAdquisicion" Index="0" IsNewNode="True" />
+                <LayoutItem Id="Procedencia" ViewItem="Procedencia" Index="1" IsNewNode="True" />
+                <LayoutItem Id="Fuente" ViewItem="Fuente" Index="2" IsNewNode="True" />
+                <LayoutItem Id="NumeroDeFactura" ViewItem="NumeroDeFactura" Index="3" IsNewNode="True" />
+                <LayoutItem Id="VidaUtil" ViewItem="VidaUtil" Index="4" IsNewNode="True" />
+                <LayoutItem Id="ValorInicial" ViewItem="ValorInicial" Index="5" IsNewNode="True" />
+                <LayoutItem Id="ValorResidual" Index="6" />
+                <LayoutItem Id="ValorADepreciar" Index="7" />
+                <LayoutItem Id="DiasADepreciar" Index="8" />
+                <LayoutItem Id="DepreciacionAnual" Index="9" />
+                <LayoutItem Id="DepreciacionMensual" Index="10" />
+                <LayoutItem Id="DepreciacionDiaria" Index="11" />
+                <LayoutItem Id="DepreciacionAcumulada" Index="12" />
+                <LayoutItem Id="ValorActual" Index="13" />
+                <LayoutItem Id="Unidad" Index="14" />
+                <LayoutItem Id="Ambiente" Index="15" />
+                <LayoutItem Id="Empleado" Index="16" />
+                <LayoutItem Id="CodigoEmpleado" Index="17" />
+                <LayoutItem Id="Depresiable" ViewItem="Depresiable" Index="18" IsNewNode="True" />
+                <LayoutItem Id="Detalle" Index="19" />
+                <LayoutItem Id="Estado" Index="20" />
+                <LayoutItem Id="EstadoAnterior" Index="21" />
+                <LayoutItem Id="Tipo" Index="22" />
+                <LayoutItem Id="EstadoActivoGuardado" Index="23" />
+                <LayoutItem Id="DepreciadoTotalmente" Index="24" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Software_ListView">
+      <Columns>
+        <ColumnInfo Id="Clase" Index="1" />
+        <ColumnInfo Id="SubClase" Index="2" />
+        <ColumnInfo Id="Empleado" Index="3" />
+        <ColumnInfo Id="AutorSoftware" Index="4" />
+        <ColumnInfo Id="LineaSoftware" Index="5" />
+        <ColumnInfo Id="Version" Index="6" />
+        <ColumnInfo Id="NumeroLicencia" Index="7" />
+        <ColumnInfo Id="Anio" Index="9" />
+        <ColumnInfo Id="RegistroCNR" Index="10" />
+      </Columns>
+    </ListView>
+    <ListView Id="Traslado_Activo_ListView">
+      <Columns>
+        <ColumnInfo Id="Correlativo" Index="-1" />
+        <ColumnInfo Id="CuentaContable" Index="-1" />
+        <ColumnInfo Id="DepreciacionAcumulada" Index="-1" />
+        <ColumnInfo Id="DepreciacionDiaria" Index="-1" />
+        <ColumnInfo Id="Establecimiento" Index="-1" />
+        <ColumnInfo Id="Estado" Index="-1" />
+        <ColumnInfo Id="EstadoActivoGuardado" Index="-1" />
+        <ColumnInfo Id="EstadoFisico" Index="-1" />
+        <ColumnInfo Id="FechaDeAdquisicion" Index="-1" />
+        <ColumnInfo Id="FechaTemporal" Index="-1" />
+        <ColumnInfo Id="Fuente" Index="-1" />
+        <ColumnInfo Id="Grupo" Index="-1" />
+        <ColumnInfo Id="NumeroDeFactura" Index="-1" />
+        <ColumnInfo Id="Observacion" Index="-1" />
+        <ColumnInfo Id="Procedencia" Index="-1" />
+        <ColumnInfo Id="Tipo" Index="-1" />
+        <ColumnInfo Id="ValorActual" Index="-1" />
+        <ColumnInfo Id="ValorInicial" Index="-1" />
+        <ColumnInfo Id="VidaUtil" Index="-1" />
+        <ColumnInfo Id="Clase" Index="1" />
+        <ColumnInfo Id="SubClase" Index="2" />
+        <ColumnInfo Id="Unidad" Index="3" />
+        <ColumnInfo Id="Ambiente" Index="4" />
+        <ColumnInfo Id="Empleado" Index="5" />
+      </Columns>
+    </ListView>
+    <ListView Id="Usuario_ListView">
+      <Columns>
+        <ColumnInfo Id="UserName" SortOrder="Ascending" />
+        <ColumnInfo Id="ChangePasswordOnFirstLogon" Index="3" />
+        <ColumnInfo Id="IsActive" Index="4" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Vehiculo_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Activo">
+              <LayoutGroup Id="Activo_col1">
+                <LayoutItem Id="ValorInicial" Removed="True" />
+                <LayoutItem Id="VidaUtil" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Activo_col2">
+                <LayoutItem Id="ValorInicial" ViewItem="ValorInicial" Index="0" IsNewNode="True" />
+                <LayoutItem Id="VidaUtil" ViewItem="VidaUtil" Index="1" IsNewNode="True" />
+                <LayoutItem Id="ValorResidual" Index="2" />
+                <LayoutItem Id="ValorADepreciar" Index="3" />
+                <LayoutItem Id="DiasADepreciar" Index="4" />
+                <LayoutItem Id="DepreciacionAnual" Index="5" />
+                <LayoutItem Id="DepreciacionMensual" Index="6" />
+                <LayoutItem Id="DepreciacionDiaria" Index="7" />
+                <LayoutItem Id="DepreciacionAcumulada" Index="8" />
+                <LayoutItem Id="ValorActual" Index="9" />
+                <LayoutItem Id="Unidad" Index="10" />
+                <LayoutItem Id="Ambiente" Index="11" />
+                <LayoutItem Id="Empleado" Index="12" />
+                <LayoutItem Id="CodigoEmpleado" Index="13" />
+                <LayoutItem Id="Detalle" Index="14" />
+                <LayoutItem Id="Estado" Index="15" />
+                <LayoutItem Id="EstadoAnterior" Index="16" />
+                <LayoutItem Id="Tipo" Index="17" />
+                <LayoutItem Id="EstadoActivoGuardado" Index="18" />
+                <LayoutItem Id="DepreciadoTotalmente" Index="19" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Vehiculo_ListView">
+      <Columns>
+        <ColumnInfo Id="AnioFabricacion" Index="-1" />
+        <ColumnInfo Id="Combustible" Index="-1" />
+        <ColumnInfo Id="Motor" Index="-1" />
+        <ColumnInfo Id="NumeroChasis" Index="-1" />
+        <ColumnInfo Id="Traccion" Index="-1" />
+        <ColumnInfo Id="Clase" Index="1" />
+        <ColumnInfo Id="SubClase" Index="2" />
+        <ColumnInfo Id="Empleado" Index="3" />
+        <ColumnInfo Id="Marca" Index="4" />
+        <ColumnInfo Id="Modelo" Index="5" />
+        <ColumnInfo Id="Placa" Index="6" />
+        <ColumnInfo Id="Color" Index="7" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

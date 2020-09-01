@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\hhuezo\publicar" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Perfil1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/SIAF.Module.pdb" publishTime="12/03/2019 09:16:47" />
+    <file relUrl="Images/logoIsta.png" publishTime="04/21/2016 14:36:11" />
+    <file relUrl="Login.aspx" publishTime="11/16/2015 12:31:44" />
+    <file relUrl="bin/SIAF.Module.dll" publishTime="12/03/2019 09:16:47" />
+    <file relUrl="Images/desarrollo.png" publishTime="10/23/2015 12:43:54" />
+    <file relUrl="bin/SIAF.Module.Web.dll" publishTime="12/03/2019 09:16:48" />
+    <file relUrl="Model_es-SV.xafml" publishTime="08/26/2019 11:45:46" />
+    <file relUrl="Images/escudo.png" publishTime="04/21/2016 14:35:17" />
+    <file relUrl="bin/SIAF.Module.Web.pdb" publishTime="12/03/2019 09:16:48" />
+    <file relUrl="bin/SIAF.Web.pdb" publishTime="12/03/2019 09:16:49" />
+    <file relUrl="bin/WhitmanMessageBoxForXAF.dll" publishTime="10/12/2015 22:54:21" />
+    <file relUrl="LogonTemplateContent1.ascx" publishTime="10/14/2015 10:01:02" />
+    <file relUrl="Images/siaf.png" publishTime="09/22/2015 09:11:50" />
+    <file relUrl="Global.asax" publishTime="09/16/2015 10:26:15" />
+    <file relUrl="Error.aspx" publishTime="11/12/2015 13:48:46" />
+    <file relUrl="bin/SIAF.Web.dll" publishTime="12/03/2019 09:16:49" />
+    <file relUrl="Web.config" publishTime="08/21/2019 14:04:15" />
+    <file relUrl="Model.xafml" publishTime="08/26/2019 11:45:46" />
+    <file relUrl="Default.aspx" publishTime="09/16/2015 10:26:15" />
+    <file relUrl="bin/es-SV/SIAF.Module.resources.dll" publishTime="12/03/2019 09:16:47" />
+    <file relUrl="Images/logo.jpg" publishTime="10/23/2015 12:43:54" />
+  </publishProfile>
+</publishData>

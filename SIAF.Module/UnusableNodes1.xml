@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" ImageName="BO_Security">
+      <Items Id="Items">
+        <ActionContainerViewItem Id="RegisterUserActionItem" ActionContainer="RegisterUserCategory" PaintStyle="Image" />
+        <ActionContainerViewItem Id="RestorePasswordActionItem" ActionContainer="RestorePasswordCategory" PaintStyle="Image" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" Caption="Main" RelativeSize="100">
+          <LayoutGroup Id="RootGroup" Caption="RootGroup" RelativeSize="100">
+            <LayoutGroup Id="ImageGroup" Caption="ImageGroup(3)" RelativeSize="8">
+              <LayoutItem Id="LogonImage" RelativeSize="100" ViewItem="LogonImage" />
+            </LayoutGroup>
+            <LayoutGroup Id="EditorsGroup" Caption="EditorsGroup" RelativeSize="91">
+              <LayoutGroup Id="Text" Caption="Text(6)" RelativeSize="6">
+                <LayoutItem Id="LogonText" RelativeSize="100" ViewItem="LogonText" />
+              </LayoutGroup>
+              <LayoutGroup Id="Editors" Caption="Editors" RelativeSize="93">
+                <LayoutGroup Id="4d5fc467-a437-4a79-b542-732e1cd37682" ShowCaption="False" Caption="4d5fc467-a437-4a79-b542-732e1cd37682(12)" Direction="Vertical" Index="0" RelativeSize="14">
+                  <LayoutGroup Id="Item3" ShowCaption="False" Caption="Item3" CaptionLocation="Top" Direction="Horizontal" Index="0" RelativeSize="100">
+                    <LayoutGroup Id="Item2" ShowCaption="False" Caption="Item2" CaptionLocation="Top" Direction="Vertical" Index="0" RelativeSize="77">
+                      <LayoutItem Id="UserName" ViewItem="UserName" Index="0" RelativeSize="43" />
+                      <LayoutItem Id="Password" ViewItem="Password" Index="1" RelativeSize="35" />
+                      <LayoutItem Id="Item5" ShowCaption="False" ViewItem="" Index="2" RelativeSize="21" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Item1" ShowCaption="False" Caption="Item1" CaptionLocation="Top" Direction="Vertical" Index="1" RelativeSize="22">
+                      <LayoutItem Id="RegisterUserActionItem" ShowCaption="False" ViewItem="RegisterUserActionItem" Index="0" RelativeSize="50" />
+                      <LayoutItem Id="RestorePasswordActionItem" ShowCaption="False" ViewItem="RestorePasswordActionItem" Index="1" RelativeSize="50" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="UserName" Index="0" RelativeSize="5" ViewItem="UserName" Removed="True" />
+                <LayoutItem Id="Password" Index="1" RelativeSize="5" ViewItem="Password" Removed="True" />
+                <LayoutItem Id="PasswordHint" Index="1" RelativeSize="85" ViewItem="PasswordHint" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Catalogos">
+        <Items Id="Items">
+          <Item Id="TipoMovimiento_ListView" ViewId="TipoMovimiento_ListView" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <ActionDesign Id="ActionDesign">
+    <Actions Id="Actions">
+      <Action Id="AcceptLogonParameters" ValidationContexts="RegisterUserContext;RestorePasswordContext" />
+    </Actions>
+  </ActionDesign>
+</Application>

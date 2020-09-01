@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D9FA0C0D-8907-4271-8A34-93674ADDFB3B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SIAF.Module</RootNamespace>
+    <AssemblyName>SIAF.Module</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\EasyTest\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EASYTEST</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.ExpressApp.AuditTrail.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.CloneObject.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Images.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Reports.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Web.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Xpo.v14.2">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v14.2.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v14.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v14.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v14.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v14.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2.Extensions, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WhitmanMessageBoxForXAF, Version=1.0.5763.40194, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Controllers\WhitmanMessageBoxForXAF.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\Activo.cs" />
+    <Compile Include="BusinessObjects\Amortizacion.cs" />
+    <Compile Include="BusinessObjects\Costeo.cs" />
+    <Compile Include="BusinessObjects\Enums\Depresiable.cs" />
+    <Compile Include="BusinessObjects\Enums\Mayor600.cs" />
+    <Compile Include="BusinessObjects\Enums\TipoActivo.cs" />
+    <Compile Include="BusinessObjects\EquipoDescargado.cs" />
+    <Compile Include="BusinessObjects\Asignacion.cs" />
+    <Compile Include="BusinessObjects\Base\Entidad.cs" />
+    <Compile Include="BusinessObjects\Base\Entidad100.cs" />
+    <Compile Include="BusinessObjects\Base\Entidad256.cs" />
+    <Compile Include="BusinessObjects\Base\EnviarCorreo.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Ambiente.cs" />
+    <Compile Include="BusinessObjects\Catalogos\AutorSoftware.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Clase.cs" />
+    <Compile Include="BusinessObjects\Catalogos\ClaseMovimiento.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Color.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Combustible.cs" />
+    <Compile Include="BusinessObjects\Catalogos\CuentaContable.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Departamento.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Depto.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Destino.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Empleado.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Establecimiento.cs" />
+    <Compile Include="BusinessObjects\Catalogos\EstadoFisico.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Fuente.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Gerencia.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Grupo.cs" />
+    <Compile Include="BusinessObjects\Catalogos\LineaSoftware.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Marca.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Material.cs" />
+    <Compile Include="BusinessObjects\Catalogos\MotivoDescargo.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Municipio.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Procedencia.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Proceso.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Region.cs" />
+    <Compile Include="BusinessObjects\Catalogos\SubClase.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Traccion.cs" />
+    <Compile Include="BusinessObjects\Catalogos\Unidad.cs" />
+    <Compile Include="BusinessObjects\Descargo.cs" />
+    <Compile Include="BusinessObjects\Enums\TipoCorreo.cs" />
+    <Compile Include="BusinessObjects\Enums\Estado.cs" />
+    <Compile Include="BusinessObjects\Enums\TipoHistorialMovimientos.cs" />
+    <Compile Include="BusinessObjects\Enums\EstadoMovimiento.cs" />
+    <Compile Include="BusinessObjects\Enums\EstadoActivoGuardado.cs" />
+    <Compile Include="BusinessObjects\Enums\EstadoAnterior.cs" />
+    <Compile Include="BusinessObjects\Enums\Mes.cs" />
+    <Compile Include="BusinessObjects\Enums\Trimestre.cs" />
+    <Compile Include="BusinessObjects\Equipo.cs" />
+    <Compile Include="BusinessObjects\HistorialMovimientos.cs" />
+    <Compile Include="BusinessObjects\ParametroFecha.cs" />
+    <Compile Include="BusinessObjects\Reportes\DepreciacionMensual.cs" />
+    <Compile Include="BusinessObjects\Reportes\MovimientosParametros.cs" />
+    <Compile Include="BusinessObjects\Reportes\ParametroAmortizacionIntangibles.cs" />
+    <Compile Include="BusinessObjects\Reportes\ParametroAsignacionOficina.cs" />
+    <Compile Include="BusinessObjects\Reportes\ParametroDepreciacionMensual.cs" />
+    <Compile Include="BusinessObjects\Reportes\ParametroDepreciacionMob.cs" />
+    <Compile Include="BusinessObjects\Reportes\ParametroDepreciacionMobNuevo.cs" />
+    <Compile Include="BusinessObjects\Reportes\ParametroDepreciacionVehiculo.cs" />
+    <Compile Include="BusinessObjects\Reportes\ParametroDepreciacionVehiculoNuevo.cs" />
+    <Compile Include="BusinessObjects\Reportes\ParametroInventarioEquipo.cs" />
+    <Compile Include="BusinessObjects\Reportes\ParametroInventarioEquipo2.cs" />
+    <Compile Include="BusinessObjects\Reportes\ParametroInventarioPorOficina.cs" />
+    <Compile Include="BusinessObjects\Reportes\ParametroInventarioVehiculo.cs" />
+    <Compile Include="BusinessObjects\Reportes\ParametroInventarioVehiculo2.cs" />
+    <Compile Include="BusinessObjects\Reportes\ParametroInventarioVehiculoOmicion.cs" />
+    <Compile Include="BusinessObjects\Reportes\ParametroPorEmpleado.cs" />
+    <Compile Include="BusinessObjects\Reportes\Reporte.cs" />
+    <Compile Include="BusinessObjects\Reportes\ReporteDepreciacion.cs" />
+    <Compile Include="BusinessObjects\Reportes\RPUnidad.cs" />
+    <Compile Include="BusinessObjects\Reportes\temporales\ReporteAmortizacion.cs" />
+    <Compile Include="BusinessObjects\Seguridad\AuditTrailConfig.cs" />
+    <Compile Include="BusinessObjects\Seguridad\ClaveFuerte.cs" />
+    <Compile Include="BusinessObjects\Seguridad\Conexion.cs" />
+    <Compile Include="BusinessObjects\Seguridad\Hora.cs" />
+    <Compile Include="BusinessObjects\Seguridad\RegistrarReseteo.cs" />
+    <Compile Include="BusinessObjects\Seguridad\HistorialDeLogueo.cs" />
+    <Compile Include="BusinessObjects\Seguridad\HistorialDeReseteo.cs" />
+    <Compile Include="BusinessObjects\Seguridad\RegistrarLogueo.cs" />
+    <Compile Include="BusinessObjects\Seguridad\Rol.cs" />
+    <Compile Include="BusinessObjects\Seguridad\Usuario.cs" />
+    <Compile Include="BusinessObjects\Seguridad\XpoHelper.cs" />
+    <Compile Include="BusinessObjects\Software.cs" />
+    <Compile Include="BusinessObjects\Traslado.cs" />
+    <Compile Include="BusinessObjects\Vehiculo.cs" />
+    <Compile Include="BusinessObjects\VehiculoDescargado.cs" />
+    <Compile Include="Controllers\About.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\About.designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AmortizacionController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\AmortizacionController.Designer.cs">
+      <DependentUpon>AmortizacionController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AsignacionController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\AsignacionController.Designer.cs">
+      <DependentUpon>AsignacionController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\Botones.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\Botones.designer.cs">
+      <DependentUpon>Botones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CambioDeClaveController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\CambioDeClaveController.designer.cs">
+      <DependentUpon>CambioDeClaveController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ClonadorController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ClonadorController.Designer.cs">
+      <DependentUpon>ClonadorController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DepreciacionFecha.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DepreciacionFecha.Designer.cs">
+      <DependentUpon>DepreciacionFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DescargoController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DescargoController.Designer.cs">
+      <DependentUpon>DescargoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FiltroEmpleadoActivo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\FiltroEmpleadoActivo.Designer.cs">
+      <DependentUpon>FiltroEmpleadoActivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FiltroEquipoDescargado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\FiltroEquipoDescargado.Designer.cs">
+      <DependentUpon>FiltroEquipoDescargado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FiltroSoftwareDescargado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\FiltroSoftwareDescargado.Designer.cs">
+      <DependentUpon>FiltroSoftwareDescargado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FiltroVehiculoDescargado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\FiltroVehiculoDescargado.Designer.cs">
+      <DependentUpon>FiltroVehiculoDescargado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\LogonActionParameters.cs" />
+    <Compile Include="Controllers\ManageUsersOnLogonController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\RolController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\RolController.Designer.cs">
+      <DependentUpon>RolController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\RolParametros.cs" />
+    <Compile Include="Controllers\StatusBarController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\StatusBarController.designer.cs">
+      <DependentUpon>StatusBarController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\TrasladoController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\TrasladoController.Designer.cs">
+      <DependentUpon>TrasladoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\User.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\User.designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module.Designer.cs">
+      <DependentUpon>Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DatabaseUpdate\Updater.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controllers\AmortizacionController.resx">
+      <DependentUpon>AmortizacionController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\AsignacionController.resx">
+      <DependentUpon>AsignacionController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\Botones.resx">
+      <DependentUpon>Botones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\DepreciacionFecha.resx">
+      <DependentUpon>DepreciacionFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\DescargoController.resx">
+      <DependentUpon>DescargoController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\RolController.resx">
+      <DependentUpon>RolController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\TrasladoController.resx">
+      <DependentUpon>TrasladoController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Module.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DatabaseUpdate\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FunctionalTests\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FunctionalTests\sample.ets" />
+    <None Include="Images\ReadMe.txt" />
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.es-SV.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FunctionalTests\config.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes1.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\logo.png" />
+    <None Include="UnusableNodes2.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes4.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes7.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Welcome.html" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

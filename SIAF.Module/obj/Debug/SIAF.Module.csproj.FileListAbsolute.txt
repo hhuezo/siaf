@@ -1,0 +1,51 @@
+C:\Users\wanaya\Documents\Visual Studio 2010\ProjectsXAF\SIAF\SIAF.Module\bin\Debug\SIAF.Module.dll
+C:\Users\wanaya\Documents\Visual Studio 2010\ProjectsXAF\SIAF\SIAF.Module\bin\Debug\SIAF.Module.pdb
+C:\Users\wanaya\Documents\Visual Studio 2010\ProjectsXAF\SIAF\SIAF.Module\bin\Debug\es-SV\SIAF.Module.resources.dll
+C:\Users\wanaya\Documents\Visual Studio 2010\ProjectsXAF\SIAF\SIAF.Module\bin\Debug\WhitmanMessageBoxForXAF.dll
+C:\Users\wanaya\Documents\Visual Studio 2010\ProjectsXAF\SIAF\SIAF.Module\obj\Debug\SIAF.Module.Controllers.AsignacionController.resources
+C:\Users\wanaya\Documents\Visual Studio 2010\ProjectsXAF\SIAF\SIAF.Module\obj\Debug\SIAF.Module.Controllers.DepreciacionController.resources
+C:\Users\wanaya\Documents\Visual Studio 2010\ProjectsXAF\SIAF\SIAF.Module\obj\Debug\SIAF.Module.Controllers.DescargoController.resources
+C:\Users\wanaya\Documents\Visual Studio 2010\ProjectsXAF\SIAF\SIAF.Module\obj\Debug\SIAF.Module.Controllers.RolController.resources
+C:\Users\wanaya\Documents\Visual Studio 2010\ProjectsXAF\SIAF\SIAF.Module\obj\Debug\SIAF.Module.Controllers.TrasladoController.resources
+C:\Users\wanaya\Documents\Visual Studio 2010\ProjectsXAF\SIAF\SIAF.Module\obj\Debug\SIAF.Module.SIAFModule.resources
+C:\Users\wanaya\Documents\Visual Studio 2010\ProjectsXAF\SIAF\SIAF.Module\obj\Debug\SIAF.Module.csproj.GenerateResource.Cache
+C:\Users\wanaya\Documents\Visual Studio 2010\ProjectsXAF\SIAF\SIAF.Module\obj\Debug\SIAF.Module.dll.licenses
+C:\Users\wanaya\Documents\Visual Studio 2010\ProjectsXAF\SIAF\SIAF.Module\obj\Debug\es-SV\SIAF.Module.resources.dll
+C:\Users\wanaya\Documents\Visual Studio 2010\ProjectsXAF\SIAF\SIAF.Module\obj\Debug\SIAF.Module.dll
+C:\Users\wanaya\Documents\Visual Studio 2010\ProjectsXAF\SIAF\SIAF.Module\obj\Debug\SIAF.Module.pdb
+C:\Users\wanaya\Documents\Visual Studio 2010\ProjectsXAF\SIAF\SIAF.Module\obj\Debug\SIAF.Module.csprojResolveAssemblyReference.cache
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF Para Alex\SIAF.Module\bin\Debug\SIAF.Module.dll
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF Para Alex\SIAF.Module\bin\Debug\SIAF.Module.pdb
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF Para Alex\SIAF.Module\bin\Debug\es-SV\SIAF.Module.resources.dll
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF Para Alex\SIAF.Module\bin\Debug\WhitmanMessageBoxForXAF.dll
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF Para Alex\SIAF.Module\obj\Debug\SIAF.Module.csprojResolveAssemblyReference.cache
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF Para Alex\SIAF.Module\obj\Debug\SIAF.Module.Controllers.AsignacionController.resources
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF Para Alex\SIAF.Module\obj\Debug\SIAF.Module.Controllers.DescargoController.resources
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF Para Alex\SIAF.Module\obj\Debug\SIAF.Module.Controllers.RolController.resources
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF Para Alex\SIAF.Module\obj\Debug\SIAF.Module.Controllers.TrasladoController.resources
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF Para Alex\SIAF.Module\obj\Debug\SIAF.Module.SIAFModule.resources
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF Para Alex\SIAF.Module\obj\Debug\SIAF.Module.csproj.GenerateResource.Cache
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF Para Alex\SIAF.Module\obj\Debug\SIAF.Module.dll.licenses
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF Para Alex\SIAF.Module\obj\Debug\es-SV\SIAF.Module.resources.dll
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF Para Alex\SIAF.Module\obj\Debug\SIAF.Module.dll
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF Para Alex\SIAF.Module\obj\Debug\SIAF.Module.pdb
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF Para Alex\SIAF.Module\obj\Debug\SIAF.Module.Controllers.Botones.resources
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF Para Alex\SIAF.Module\obj\Debug\SIAF.Module.Controllers.DepreciacionFecha.resources
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\bin\Debug\SIAF.Module.dll
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\bin\Debug\SIAF.Module.pdb
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\bin\Debug\es-SV\SIAF.Module.resources.dll
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\bin\Debug\WhitmanMessageBoxForXAF.dll
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\obj\Debug\SIAF.Module.csprojResolveAssemblyReference.cache
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\obj\Debug\SIAF.Module.Controllers.AsignacionController.resources
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\obj\Debug\SIAF.Module.Controllers.Botones.resources
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\obj\Debug\SIAF.Module.Controllers.DepreciacionFecha.resources
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\obj\Debug\SIAF.Module.Controllers.DescargoController.resources
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\obj\Debug\SIAF.Module.Controllers.RolController.resources
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\obj\Debug\SIAF.Module.Controllers.TrasladoController.resources
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\obj\Debug\SIAF.Module.SIAFModule.resources
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\obj\Debug\SIAF.Module.csproj.GenerateResource.Cache
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\obj\Debug\SIAF.Module.dll.licenses
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\obj\Debug\es-SV\SIAF.Module.resources.dll
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\obj\Debug\SIAF.Module.dll
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\obj\Debug\SIAF.Module.pdb
+C:\Users\hhuezo\Documents\Visual Studio 2010\Projects\SIAF\SIAF.Module\obj\Debug\SIAF.Module.Controllers.AmortizacionController.resources

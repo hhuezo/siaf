@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Localization>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationGroup Name="UserVisibleExceptions">
+        <LocalizationGroup Name="Validation">
+          <LocalizationItem Name="ActionErrorMessageHeaderFormat" Value="" />
+          <LocalizationItem Name="AllContextsErrorMessageHeader" Value="" />
+          <LocalizationItem Name="DeleteErrorMessageHeader" Value="" />
+          <LocalizationItem Name="SaveErrorMessageHeader" Value="" />
+        </LocalizationGroup>
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="RuleSetValidationResult_ByTarget_Error_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="" />
+      </Items>
+    </DetailView>
+    <DetailView Id="ValidationResults_Error_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>
